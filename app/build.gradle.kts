@@ -33,6 +33,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -44,4 +47,13 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
+    // viewPager2
+    implementation("androidx.viewpager2:viewpager2:1.0.0")
+
+    //material components
+    implementation("com.google.android.material:material:1.10.0")
+
+    // youtube videoplayer 3rd party dependency
+    implementation("com.pierfrancescosoffritti.androidyoutubeplayer:core:12.1.0")
 }
