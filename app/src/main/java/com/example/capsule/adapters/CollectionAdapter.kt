@@ -1,7 +1,8 @@
-package com.example.capsule
+package com.example.capsule.adapters
 
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import com.example.capsule.utility.Utils
 
 class CollectionAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
     override fun getItemCount(): Int = 3

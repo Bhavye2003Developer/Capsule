@@ -54,6 +54,9 @@ dependencies {
     //material components
     implementation("com.google.android.material:material:1.10.0")
 
-    // youtube videoplayer 3rd party dependency
+    //youtube videoplayer 3rd party dependency
     implementation("com.pierfrancescosoffritti.androidyoutubeplayer:core:12.1.0")
+
+    //lifecycle
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
 }
