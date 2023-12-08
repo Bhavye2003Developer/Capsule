@@ -59,10 +59,5 @@ The project is organized into several packages:
 2. **Open the project in Android Studio.**
 3. **Build and run the application on an emulator or physical device.**
 
-## Evaluation and Submission
-
-The project will be evaluated based on adherence to requirements, code quality, and effective use of clean architecture/MVVM. Please submit the completed project, including the source code, APK, and a brief video demonstrating the app.
 
 Feel free to reach out if you have any questions or need further clarification on the assignment.
-
-Good luck!
