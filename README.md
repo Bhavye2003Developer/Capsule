@@ -1,67 +1,67 @@
 # Capsule App
 
-## Objective
-
-The Capsule App is designed to implement a sequence of screens, forming a capsule, in an Android application. This document provides an overview of the application, its features, and the technical implementation.
+The Capsule App is an Android application designed to provide users with a curated sequence of screens, forming a cohesive and engaging user experience. This README.md file provides an overview of the project, its key features, technical details, and instructions for running the app.
 
 ## Features
 
-The Capsule App includes the following features:
+### 1. Video Screen
+- **Task:** Display a video using the YouTube Player API.
+- **Implementation:** Utilizes the YouTube Player API for seamless video playback within the app.
 
-1. **Video Screen:**
-   - Displays a video using the YouTube Player API.
-   - Users can watch the video before proceeding.
+### 2. Notes Screen
+- **Task:** Display textual content related to a specific topic.
+- **Implementation:** Loads content from a provided PDF hosted on Google Drive, rendering it in a WebView.
 
-2. **Notes Screen:**
-   - Displays textual content related to a specific topic.
-   - Content is loaded from a provided PDF hosted on Google Drive.
+### 3. Quiz Screen
+- **Task:** Present a set of multiple-choice questions.
+- **Implementation:** Questions are stored in a `Quiz` class, providing a shuffled set for users to answer.
 
-3. **Quiz Screen:**
-   - Presents a set of questions for the user to answer.
-   - Multiple-choice questions with options.
-   - Users can check their answers.
-
-4. **Quiz Result Screen:**
-   - Displays the result of the quiz.
-   - Shows the user's score as a percentage.
-
-5. **Optional Feature - Time Limit:**
-   - Optionally, there's a time limit for completing the entire capsule (e.g., 10 minutes).
+### 4. Quiz Result Screen
+- **Task:** Display the result of the quiz.
+- **Implementation:** After completing the quiz, users are shown their score as a percentage on the Quiz Result Screen.
 
 ## Technical Details
 
-- The app is written in Kotlin.
-- Utilizes clean architecture and MVVM design patterns.
-- Follows best practices for Android development.
-- Ensures code modularity, readability, and maintainability.
-- Optional time limit functionality is implemented using a countdown timer.
+### a. Architecture
+- **Why:** Ensuring a clean and modular code structure.
+- **How:** Follows the clean architecture pattern with MVVM design, promoting separation of concerns.
+
+### b. View Binding
+- **Why:** Binding UI components in a type-safe manner.
+- **How:** Utilizes View Binding, allowing for more robust and type-safe access to UI elements.
+
+### c. ViewModels
+- **Why:** Managing UI-related data efficiently.
+- **How:** Implements ViewModels using Android's `ViewModel` class, separating UI logic from UI components.
+
+### d. Fragment Navigation
+- **Why:** Facilitating navigation between different screens.
+- **How:** Uses the `FragmentTransaction` mechanism for fragment navigation, ensuring a smooth transition.
+
+### e. YouTube Player API Integration
+- **Why:** Embedding and playing YouTube videos within the app.
+- **How:** Integrates the YouTube Player API to allow users to watch videos seamlessly without leaving the app.
+
+### f. Countdown Timer
+- **Why:** Enforcing an optional time limit for completing the entire capsule.
+- **How:** Implements a countdown timer using Kotlin Coroutines (`viewModelScope.launch`) and Android's `Dispatchers` for asynchronous execution.
 
 ## Project Structure
 
 The project is organized into several packages:
-
-- `fragments`: Contains individual fragments for Video, Notes, Quiz, and Quiz Result screens.
-- `adapters`: Includes the `CollectionAdapter` for managing the ViewPager.
-- `utility`: Holds utility classes and data structures.
+- `fragments`: Contains individual fragments for different screens (Video, Notes, Quiz, Quiz Result).
+- `adapters`: Includes the `CollectionAdapter` responsible for managing the ViewPager.
+- `utility`: Holds utility classes and data structures, such as the `Quiz` class and constants.
 
 ## How to Run
 
-1. Clone the repository.
-2. Open the project in Android Studio.
-3. Build and run the application on an emulator or physical device.
+1. **Clone the repository.**
+2. **Open the project in Android Studio.**
+3. **Build and run the application on an emulator or physical device.**
 
-## Evaluation Criteria
+## Evaluation and Submission
 
-The project will be evaluated based on the following criteria:
-
-- Adherence to provided requirements.
-- Code quality, including cleanliness, readability, and modularity.
-- Effective use of clean architecture/MVVM.
-- Proper implementation of the Capsule feature.
-
-## Deadline
-
-Please submit the completed project as soon as possible.
+The project will be evaluated based on adherence to requirements, code quality, and effective use of clean architecture/MVVM. Please submit the completed project, including the source code, APK, and a brief video demonstrating the app.
 
 Feel free to reach out if you have any questions or need further clarification on the assignment.
 
