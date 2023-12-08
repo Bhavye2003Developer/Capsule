@@ -46,6 +46,9 @@ The Capsule App is an Android application designed to provide users with a curat
 - **Why:** Enforcing an optional time limit for completing the entire capsule.
 - **How:** Implements a countdown timer using Kotlin Coroutines (`viewModelScope.launch`) and Android's `Dispatchers` for asynchronous execution.
 
+[Screen_recording_20231208_105950.webm](https://github.com/Bhavye2003Developer/Capsule/assets/110657263/7c81f22e-dde6-4156-915a-2725dcbbea9d)
+
+
 ## Project Structure
 
 The project is organized into several packages:
